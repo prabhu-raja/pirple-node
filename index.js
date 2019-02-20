@@ -22,6 +22,11 @@ const server = http.createServer((req, res) => {
     // Send the response
     res.end(`Hello World from server`);
 
+    // Get the Http Method
+    const method = req.method;
+
+    console.log('Method: ' + method);
+
 
     // Log the request path
     console.log(`Req received on path🐛 - ${trimmedPath}`);
